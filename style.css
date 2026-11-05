@@ -156,14 +156,16 @@ button {
   letter-spacing: 0.04em;
 }
 
+.announcement-bar .announcement-content,
 .announcement-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.75rem;
-  width: min(100% - clamp(1rem, 3vw, 3rem), 1600px);
+  width: 100%;
   max-width: 1680px;
+  margin-inline: auto;
   padding: 0 clamp(1rem, 3vw, 3rem);
 }
 
@@ -239,7 +241,7 @@ button {
   justify-content: space-between;
   align-items: center;
   height: clamp(5rem, 6.5vw, 6.5rem);
-  width: min(100% - clamp(1rem, 3vw, 3rem), 1600px);
+  width: 100%;
   max-width: 1680px;
   margin-inline: auto;
   padding: 0 clamp(1rem, 3vw, 3rem);
@@ -303,19 +305,20 @@ button {
   justify-content: center;
   gap: clamp(1rem, 2vw, 2.5rem);
   margin-left: clamp(1.5rem, 3vw, 4rem);
-  margin-right: clamp(1.5rem, 3vw, 4rem);
+  margin-right: clamp(1rem, 2vw, 2.5rem);
   flex: 1 1 auto;
+  min-width: 0;
   flex-wrap: nowrap;
 }
 
 .nav-links a {
-  font-size: clamp(0.8rem, 0.92vw, 0.9rem);
+  font-size: clamp(0.78rem, 0.88vw, 0.88rem);
   font-weight: 500;
   color: var(--text-main);
   text-transform: uppercase;
-  letter-spacing: clamp(0.04em, 0.08vw, 0.08em);
+  letter-spacing: clamp(0.03em, 0.06vw, 0.06em);
   position: relative;
-  padding: 0.45rem 0.2rem;
+  padding: 0.45rem clamp(0.12rem, 0.22vw, 0.22rem);
   white-space: nowrap;
   transition: color 0.25s ease;
 }
@@ -2899,13 +2902,20 @@ button {
   }
   .site-header .header-content,
   .header-content {
-    width: min(100% - 4rem, 1720px);
+    width: 100%;
     max-width: 1760px;
     height: clamp(5.6rem, 6.5vw, 7.2rem);
     padding: 0 clamp(2rem, 3.5vw, 4rem);
   }
+  .site-header.scrolled .header-content {
+    height: clamp(4.8rem, 5.5vw, 5.8rem);
+  }
+  .site-header.scrolled .brand-logo-img {
+    height: clamp(52px, 4.8vw, 68px);
+  }
+  .announcement-bar .announcement-content,
   .announcement-content {
-    width: min(100% - 4rem, 1720px);
+    width: 100%;
     max-width: 1760px;
     padding: 0 clamp(2rem, 3.5vw, 4rem);
   }
@@ -2916,7 +2926,7 @@ button {
   .nav-links {
     gap: clamp(1.4rem, 2vw, 2.8rem);
     margin-left: clamp(2rem, 3vw, 5rem);
-    margin-right: clamp(2rem, 3vw, 5rem);
+    margin-right: clamp(1.5rem, 2.5vw, 4rem);
   }
   .hero-grid {
     gap: 4rem;
@@ -2936,13 +2946,20 @@ button {
   }
   .site-header .header-content,
   .header-content {
-    width: min(100% - 5rem, 2100px);
+    width: 100%;
     max-width: 2200px;
     height: clamp(6.2rem, 6.5vw, 8.2rem);
     padding: 0 clamp(2.5rem, 4vw, 5rem);
   }
+  .site-header.scrolled .header-content {
+    height: clamp(5.4rem, 5.5vw, 6.6rem);
+  }
+  .site-header.scrolled .brand-logo-img {
+    height: clamp(60px, 4.8vw, 78px);
+  }
+  .announcement-bar .announcement-content,
   .announcement-content {
-    width: min(100% - 5rem, 2100px);
+    width: 100%;
     max-width: 2200px;
     padding: 0 clamp(2.5rem, 4vw, 5rem);
   }
@@ -2953,7 +2970,7 @@ button {
   .nav-links {
     gap: clamp(1.8rem, 2.2vw, 3.2rem);
     margin-left: clamp(2.5rem, 3.5vw, 6rem);
-    margin-right: clamp(2.5rem, 3.5vw, 6rem);
+    margin-right: clamp(2rem, 3vw, 5rem);
   }
   .hero-grid {
     gap: 5rem;
@@ -3011,6 +3028,7 @@ button {
     display: none;
   }
 
+  .site-header .header-content,
   .header-content {
     height: 4.8rem;
   }

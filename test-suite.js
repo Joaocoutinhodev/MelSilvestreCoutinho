@@ -371,6 +371,30 @@ testViewports.forEach(vp => {
     const totalHeaderW = estimatedLogoW + estimatedActionsW;
     assert(totalHeaderW <= containerW, `Viewport ${vp.name}: Compact header (${totalHeaderW.toFixed(0)}px) fits inside container (${containerW}px) without collision`);
   }
+
+  // Desktop header fit & collision prevention check
+  if (vp.width > 1180) {
+    const padRem = evalClamp(1, 3, 3, vp.width, rem);
+    const headerPadPx = 2 * padRem * rem;
+    const headerMax = vp.width >= 2560 ? 2200 : (vp.width >= 1920 ? 1760 : 1680);
+    const availableHeaderW = Math.min(vp.width, headerMax) - headerPadPx;
+
+    const logoH = vp.width >= 2560 ? evalClamp(74/rem, 5.2, 98/rem, vp.width, rem) * rem :
+                  (vp.width >= 1920 ? evalClamp(64/rem, 5.5, 86/rem, vp.width, rem) * rem :
+                   evalClamp(54/rem, 5.5, 78/rem, vp.width, rem) * rem);
+    const logoW = Math.min(logoH * 1.8122, vp.width >= 2560 ? 360 : (vp.width >= 1920 ? 320 : 280));
+
+    const gapPx = evalClamp(1, 2, 2.5, vp.width, rem) * rem;
+    const linksTextW = 570 * (rem / 16);
+    const navContentW = linksTextW + (5 * gapPx);
+
+    const marginL = evalClamp(1.5, 3, 4, vp.width, rem) * rem;
+    const marginR = evalClamp(1, 2, 2.5, vp.width, rem) * rem;
+    const cartW = 150 * (rem / 16);
+
+    const totalHeaderNeeded = logoW + marginL + navContentW + marginR + cartW;
+    assert(totalHeaderNeeded <= availableHeaderW, `Viewport ${vp.name}: Desktop header (${totalHeaderNeeded.toFixed(0)}px) fits inside available header (${availableHeaderW.toFixed(0)}px) without clipping`);
+  }
 });
 
 console.log(`\n================================`);
