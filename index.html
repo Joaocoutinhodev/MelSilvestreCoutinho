@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Méis Coutinho | Mel Silvestre 100% Puro em Garrafa de Vidro de 1 Litro</title>
+  <meta name="description" content="Méis Coutinho - Mel Silvestre 100% Puro e Capixaba em garrafa nobre de vidro de 1L. Entregas na Grande Vitória e envio para todo o Brasil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3.8">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-item">
+        <i data-lucide="shield-check" class="top-icon"></i>
+        <span><strong>Méis Coutinho</strong> &bull; Mel Silvestre 100% Puro</span>
+      </div>
+      <div class="announcement-badges">
+        <span class="delivery-badge"><i data-lucide="bike" class="inline-icon"></i> Entrega Expressa na Grande Vitória</span>
+        <span class="delivery-badge"><i data-lucide="truck" class="inline-icon"></i> Envio Seguro para Todo o Brasil</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#" class="brand-logo" aria-label="Méis Coutinho Página Inicial">
+        <img src="img/logo-transparent.png" alt="Méis Coutinho" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação Principal">
+        <a href="#produto">O Produto</a>
+        <a href="#historia">Origem & Curadoria</a>
+        <a href="#vidro-validade">Por que Vidro?</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#entregas">Entregas</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="cartBtn" class="cart-trigger-btn" aria-label="Abrir carrinho de compras">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-label">Carrinho</span>
+          <span id="cartCountBadge" class="cart-badge">0</span>
+        </button>
+
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <i data-lucide="menu" id="menuIconOpen"></i>
+          <i data-lucide="x" id="menuIconClose" style="display: none;"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNavMenu" class="mobile-nav-menu" aria-hidden="true">
+      <nav class="mobile-nav-links">
+        <a href="#produto" class="mobile-nav-link"><i data-lucide="package"></i> O Produto (Garrafa 1L)</a>
+        <a href="#historia" class="mobile-nav-link"><i data-lucide="shield-check"></i> Origem & Curadoria Méis Coutinho</a>
+        <a href="#vidro-validade" class="mobile-nav-link"><i data-lucide="wine"></i> Por que Vidro & Sem Validade</a>
+        <a href="#beneficios" class="mobile-nav-link"><i data-lucide="utensils"></i> Benefícios & Culinária</a>
+        <a href="#entregas" class="mobile-nav-link"><i data-lucide="truck"></i> Entregas GV & Brasil</a>
+        <a href="#faq" class="mobile-nav-link"><i data-lucide="help-circle"></i> Dúvidas Frequentes</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="https://wa.me/5527998063815" id="mobileWhatsAppBtn" class="btn-whatsapp-mobile" target="_blank" rel="noopener noreferrer">
+          <i data-lucide="message-circle"></i> Falar no WhatsApp com a Méis Coutinho
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero & Product Showcase -->
+    <section id="produto" class="hero-section">
+      <div class="container hero-grid">
+        
+        <!-- Product Images Gallery -->
+        <div class="product-gallery">
+          <div class="main-image-wrapper">
+            <span class="badge-ribbon">
+              <i data-lucide="shield-check" class="ribbon-icon"></i> 100% Puro & Silvestre
+            </span>
+            <img id="mainProductImg" 
+                 src="img/garrafa-coutinho.jpg?v=3.6" 
+                 alt="Garrafa de Vidro de 1 Litro de Mel Silvestre Puro Méis Coutinho com tampa de rolha" 
+                 class="main-product-img view-full">
+          </div>
+
+          <div class="gallery-info-note">
+            <i data-lucide="shield-check"></i>
+            <span>Garrafa nobre de 1 Litro Méis Coutinho com fechamento tradicional em rolha de cortiça.</span>
+          </div>
+          
+          <div class="quality-badges-row">
+            <div class="quality-badge-item">
+              <i data-lucide="shield-check" class="badge-icon"></i>
+              <span>100% Silvestre & Capixaba</span>
+            </div>
+            <div class="quality-badge-item">
+              <i data-lucide="wine" class="badge-icon"></i>
+              <span>Garrafa de Vidro de 1 Litro</span>
+            </div>
+            <div class="quality-badge-item">
+              <i data-lucide="check-circle-2" class="badge-icon"></i>
+              <span>Mel Silvestre 100% Puro</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Buy Box Details -->
+        <div class="product-details-card">
+          <div class="details-header">
+            <div class="origin-tag">
+              <i data-lucide="shield-check"></i> Mel Silvestre Capixaba &bull; 100% Puro
+            </div>
+
+            <h1 class="product-title">Mel Silvestre 100% puro e capixaba.</h1>
+            <p class="product-subtitle">
+              Um mel cru, autêntico e vivo, envasado na origem em garrafa de vidro de 1 Litro para preservar cada enzima natural, o própolis e as notas florais silvestres.
+            </p>
+          </div>
+
+          <!-- Price & Volume Tag -->
+          <div class="price-box">
+            <div class="price-tag-wrap">
+              <div class="price-row">
+                <span class="currency">R$</span>
+                <span class="price-amount" id="productPriceDisplay">60,00</span>
+                <span class="price-unit">/ Garrafa de 1 Litro</span>
+              </div>
+            </div>
+            <div class="stock-status">
+              <span class="stock-indicator"></span> Pronta entrega
+            </div>
+          </div>
+
+          <!-- Feature Highlights Pills -->
+          <div class="feature-pills-grid">
+            <div class="feature-pill">
+              <div class="pill-icon-box"><i data-lucide="flask-conical"></i></div>
+              <div>
+                <strong>Garrafa de Vidro 1L</strong>
+                <span>Preserva sabor & sem toxinas</span>
+              </div>
+            </div>
+            <div class="feature-pill">
+              <div class="pill-icon-box"><i data-lucide="shield-check"></i></div>
+              <div>
+                <strong>Zero Pasteurização</strong>
+                <span>Alimento vivo com enzimas</span>
+              </div>
+            </div>
+            <div class="feature-pill">
+              <div class="pill-icon-box"><i data-lucide="infinity"></i></div>
+              <div>
+                <strong>Não Tem Validade</strong>
+                <span>Pureza eterna da natureza</span>
+              </div>
+            </div>
+            <div class="feature-pill">
+              <div class="pill-icon-box"><i data-lucide="award"></i></div>
+              <div>
+                <strong>Curadoria Artesanal</strong>
+                <span>Seleção nobre do Espírito Santo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quantity & Purchase Selector -->
+          <div class="buy-action-area">
+            <label class="qty-label" for="productQtyInput">Selecione quantas garrafas deseja:</label>
+            <div class="qty-and-buttons">
+              <div class="quantity-stepper">
+                <button type="button" class="stepper-btn" id="decreaseQty" aria-label="Diminuir quantidade">-</button>
+                <input type="number" id="productQtyInput" value="1" min="1" max="99" aria-label="Quantidade de garrafas" readonly>
+                <button type="button" class="stepper-btn" id="increaseQty" aria-label="Aumentar quantidade">+</button>
+              </div>
+
+              <div class="action-buttons-group">
+                <button id="addToCartBtn" class="btn btn-secondary">
+                  <i data-lucide="shopping-bag"></i>
+                  Adicionar ao Carrinho
+                </button>
+                <button id="buyNowBtn" class="btn btn-primary">
+                  <i data-lucide="message-circle"></i>
+                  Pedir no WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guarantees list -->
+          <div class="guarantees-list">
+            <div class="guarantee-item">
+              <div class="g-icon"><i data-lucide="bike"></i></div>
+              <div>
+                <strong>Entrega na Grande Vitória (ES)</strong>
+                <span>Entrega expressa em Vitória, Vila Velha, Serra, Cariacica, Viana e Guarapari.</span>
+              </div>
+            </div>
+            <div class="guarantee-item">
+              <div class="g-icon"><i data-lucide="package-check"></i></div>
+              <div>
+                <strong>Envio para Todo o Brasil</strong>
+                <span>Embalagem reforçada à prova de quebra para garrafas de vidro de 1L.</span>
+              </div>
+            </div>
+            <div class="guarantee-item">
+              <div class="g-icon"><i data-lucide="qr-code"></i></div>
+              <div>
+                <strong>Pagamento Facilitado</strong>
+                <span>Pix, Dinheiro na entrega ou Cartão de Crédito/Débito.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Institutional / Brand Story Section -->
+    <section id="historia" class="brand-story-section">
+      <div class="container">
+        <div class="story-card">
+          <div class="story-grid">
+            <div class="story-content">
+              <span class="section-tag"><i data-lucide="feather"></i> Origem & Curadoria</span>
+              <h2 class="section-heading">Méis Coutinho: A Excelência do Mel Silvestre Puro</h2>
+              
+              <p class="story-lead">
+                A <strong>Méis Coutinho</strong> nasceu com o propósito de levar o mel silvestre mais nobre e puro do Espírito Santo diretamente até a mesa dos apreciadores de alimentos autênticos.
+              </p>
+
+              <p class="story-text">
+                A Méis Coutinho atua com curadoria e distribuição exclusiva de mel silvestre 100% puro, colhido nas floradas nativas preservadas do Espírito Santo. Nosso papel é a seleção minuciosa de safras autênticas, cruas e vivas, envasadas na origem em recipientes nobres de vidro de 1 Litro.
+              </p>
+
+              <p class="story-text">
+                Sem processos industriais agressivos, sem superaquecimento e sem adição de qualquer tipo de xarope ou glicose. O resultado é um mel de tom âmbar dourado, sabor floral pronunciado e riqueza biológica plena.
+              </p>
+
+              <div class="story-quote">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <blockquote>
+                  "Nosso compromisso é entregar o mel silvestre mais autêntico do Espírito Santo: 100% puro, cru e preservado em vidro nobre como manda a tradição."
+                </blockquote>
+                <div class="quote-author">— Méis Coutinho</div>
+              </div>
+
+              <div class="story-highlights-row">
+                <div class="highlight-item">
+                  <span class="highlight-num">100%</span>
+                  <span class="highlight-label">Mel Cru & Silvestre</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-num">0%</span>
+                  <span class="highlight-label">Químicos ou Aditivos</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-num">1 Litro</span>
+                  <span class="highlight-label">Garrafa de Vidro Nobre</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-visual">
+              <div class="story-image-card">
+                <img src="img/story-coutinho.jpg?v=3.8" alt="Vitrine Oficial Méis Coutinho - Garrafas de Vidro de 1L" class="story-img">
+                <div class="story-badge-floating">
+                  <i data-lucide="shield-check"></i>
+                  <span>100% Puro & Silvestre</span>
+                </div>
+              </div>
+              <div class="story-side-note">
+                <i data-lucide="info"></i>
+                <p>Nossos lotes são selecionados respeitando o ritmo sazonal de polinização natural na vegetação nativa preservada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Glass & Why Raw Honey Has No Expiration Date Section -->
+    <section id="vidro-validade" class="deep-knowledge-section">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <span class="section-tag"><i data-lucide="microscope"></i> Pureza Comprovada</span>
+          <h2 class="section-heading">A Nobreza do Vidro & A Perenidade do Mel Silvestre</h2>
+          <p class="section-subheading">Entenda por que a Méis Coutinho trabalha exclusivamente com garrafas de vidro de 1L e como a ciência explica a perenidade do mel puro.</p>
+        </div>
+
+        <div class="knowledge-cards-grid">
+          
+          <!-- Card 1: Por que a Garrafa de Vidro? -->
+          <div class="knowledge-card glass-theme">
+            <div class="card-header-pill">
+              <i data-lucide="wine"></i> Por Que Usamos Garrafa de Vidro?
+            </div>
+            <h3 class="card-title">O Vidro Preserva a Vida do Mel</h3>
+            <p class="card-desc">
+              O mel puro é uma substância viva e extremamente sensível. Recipientes plásticos comerciais liberam microplásticos e alteram notas aromáticas. O vidro garante pureza intocada.
+            </p>
+
+            <ul class="knowledge-feature-list">
+              <li>
+                <div class="kf-icon"><i data-lucide="check"></i></div>
+                <div>
+                  <strong>Material Inerte e Nobre:</strong>
+                  <span>O vidro não reage com os ácidos naturais do mel, preservando aroma, notas florais e bioativos por anos.</span>
+                </div>
+              </li>
+              <li>
+                <div class="kf-icon"><i data-lucide="check"></i></div>
+                <div>
+                  <strong>Fluidez Silvestre Natural:</strong>
+                  <span>Pela alta concentração de frutose floral natural, o nosso mel silvestre praticamente não cristaliza, mantendo-se sempre fluido, límpido e encorpado ao longo do tempo, preservando intactos 100% de seus nutrientes e enzimas ativas.</span>
+                </div>
+              </li>
+              <li>
+                <div class="kf-icon"><i data-lucide="check"></i></div>
+                <div>
+                  <strong>Tradição & Sustentabilidade:</strong>
+                  <span>Uma garrafa de 1 Litro clássica e duradoura que homenageia sua mesa e pode ser reutilizada indefinidamente.</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="card-footer-tip">
+              <i data-lucide="lightbulb"></i>
+              <span><strong>Dica Méis Coutinho:</strong> Devido à rica florada silvestre com alto equilíbrio natural de frutose, nosso mel praticamente não cristaliza, mantendo sua fluidez nobre e pureza 100% natural.</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Por Que Mel 100% Puro Não Tem Validade? -->
+          <div class="knowledge-card eternity-theme">
+            <div class="card-header-pill">
+              <i data-lucide="infinity"></i> A Ciência da Perenidade
+            </div>
+            <h3 class="card-title">Por Que Mel Puro Não Tem Validade?</h3>
+            <p class="card-desc">
+              Arqueólogos já encontraram ânforas de mel em tumbas egípcias de 3.000 anos perfeitamente comestíveis. A biologia do mel autêntico explica sua perenidade:
+            </p>
+
+            <ul class="knowledge-feature-list">
+              <li>
+                <div class="kf-icon"><i data-lucide="droplet-off"></i></div>
+                <div>
+                  <strong>1. Baixíssima Umidade (< 18%):</strong>
+                  <span>Concentração altíssima de açúcares naturais e quase nenhuma água livre. Por osmose, micro-organismos não conseguem se desenvolver.</span>
+                </div>
+              </li>
+              <li>
+                <div class="kf-icon"><i data-lucide="shield-check"></i></div>
+                <div>
+                  <strong>2. Acidez Natural Perfeita (pH 3,2 a 4,5):</strong>
+                  <span>Ácidos orgânicos naturais (como o ácido glucônico) criam uma barreira biológica natural e protetora.</span>
+                </div>
+              </li>
+              <li>
+                <div class="kf-icon"><i data-lucide="dna"></i></div>
+                <div>
+                  <strong>3. Enzima Glicose-Oxidase das Abelhas:</strong>
+                  <span>As abelhas introduzem essa enzima que sintetiza microquantidades naturais de peróxido de hidrogênio (antisséptico natural).</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="card-footer-tip">
+              <i data-lucide="alert-circle"></i>
+              <span><strong>Fato Científico:</strong> A legislação exige data em rótulos comerciais, mas a ciência comprova: guardado fechado e ao abrigo do sol, mel puro nunca estraga.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Benefits & Scientific Explorer Section -->
+    <section id="beneficios" class="benefits-explorer-section">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <span class="section-tag"><i data-lucide="apple"></i> Saúde & Versatilidade</span>
+          <h2 class="section-heading">O Poder Científico, Nutricional & Culinário do Mel</h2>
+          <p class="section-subheading">Clique nas categorias abaixo para explorar os múltiplos benefícios do Mel Silvestre Méis Coutinho na sua rotina:</p>
+        </div>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="interactive-filter-tabs" role="tablist" aria-label="Filtro de benefícios do mel">
+          <button class="filter-tab-btn active" data-filter="todos" role="tab" aria-selected="true">
+            <i data-lucide="grid"></i> Todos os Usos
+          </button>
+          <button class="filter-tab-btn" data-filter="remedio" role="tab" aria-selected="false">
+            <i data-lucide="shield-plus"></i> Remédio & Imunidade
+          </button>
+          <button class="filter-tab-btn" data-filter="treino" role="tab" aria-selected="false">
+            <i data-lucide="zap"></i> Pré-Treino & Energia
+          </button>
+          <button class="filter-tab-btn" data-filter="adocante" role="tab" aria-selected="false">
+            <i data-lucide="coffee"></i> Açúcar Natural
+          </button>
+          <button class="filter-tab-btn" data-filter="culinaria" role="tab" aria-selected="false">
+            <i data-lucide="utensils"></i> Gastronomia & Molhos
+          </button>
+          <button class="filter-tab-btn" data-filter="ciencia" role="tab" aria-selected="false">
+            <i data-lucide="dna"></i> Ciência & Nutrição
+          </button>
+        </div>
+
+        <!-- Benefits Cards Grid -->
+        <div class="benefits-cards-grid" id="benefitsCardsContainer">
+          
+          <!-- Card: Remédio & Imunidade -->
+          <div class="benefit-interactive-card" data-category="remedio">
+            <div class="b-card-badge remedio-badge">
+              <i data-lucide="shield-plus"></i> Remédio & Imunidade
+            </div>
+            <h3 class="b-card-title">Alívio da Garganta e Escudo Antimicrobiano</h3>
+            <p class="b-card-desc">
+              O mel silvestre cru é amplamente estudado por suas propriedades bactericidas e emolientes. Ele acalma o pigarro, reveste a mucosa da garganta e estimula a imunidade natural.
+            </p>
+            <div class="b-card-recipe">
+              <div class="recipe-head">
+                <i data-lucide="check-circle-2"></i> <strong>Como Usar: Chá Protetor & Imunidade</strong>
+              </div>
+              <p>Prepare chá de hortelã ou gengibre com limão. Aguarde a bebida ficar <em>morna</em> e só então adicione 1 colher de Mel Silvestre Méis Coutinho — para manter as enzimas vivas intactas.</p>
+            </div>
+          </div>
+
+          <!-- Card: Pré-Treino & Energia -->
+          <div class="benefit-interactive-card" data-category="treino">
+            <div class="b-card-badge treino-badge">
+              <i data-lucide="zap"></i> Pré-Treino & Energia Limpa
+            </div>
+            <h3 class="b-card-title">Combustível Muscular de Alta Eficiência</h3>
+            <p class="b-card-desc">
+              Diferente de açúcares refinados com picos bruscos de insulina, a combinação equilibrada de <strong>glicose e frutose natural</strong> do mel silvestre fornece energia rápida e sustentada para treinos intensos e esportes.
+            </p>
+            <div class="b-card-recipe">
+              <div class="recipe-head">
+                <i data-lucide="check-circle-2"></i> <strong>Como Usar: Pré-Treino Natural</strong>
+              </div>
+              <p>Consuma 1 colher de sopa de Mel Silvestre Méis Coutinho com fatias de banana ou aveia cerca de 25 a 30 minutos antes do exercício físico.</p>
+            </div>
+          </div>
+
+          <!-- Card: Açúcar Natural -->
+          <div class="benefit-interactive-card" data-category="adocante">
+            <div class="b-card-badge adocante-badge">
+              <i data-lucide="coffee"></i> Substituto do Açúcar Refinado
+            </div>
+            <h3 class="b-card-title">Doçura Inteligente e Funcional</h3>
+            <p class="b-card-desc">
+              O mel silvestre entrega poder adoçante superior aliado a enzimas digestivas, potássio, magnésio e fósforo que nutrem o organismo enquanto adoçam bebidas e receitas.
+            </p>
+            <div class="b-card-recipe">
+              <div class="recipe-head">
+                <i data-lucide="check-circle-2"></i> <strong>Como Usar: Na Rotina Matinal</strong>
+              </div>
+              <p>Substitua o açúcar no café especial, em sucos naturais, iogurtes artesanais e tigelas de frutas com sementes.</p>
+            </div>
+          </div>
+
+          <!-- Card: Gastronomia & Molhos -->
+          <div class="benefit-interactive-card" data-category="culinaria">
+            <div class="b-card-badge culinaria-badge">
+              <i data-lucide="utensils"></i> Gastronomia & Molhos Nobres
+            </div>
+            <h3 class="b-card-title">O Toque Secreto da Alta Culinária</h3>
+            <p class="b-card-desc">
+              Na culinária autoral, o mel silvestre harmoniza notas doces, ácidas e salgadas, valorizando molhos de salada e caramelizando carnes nobres com brilho e complexidade aromática.
+            </p>
+            <div class="b-card-recipe">
+              <div class="recipe-head">
+                <i data-lucide="check-circle-2"></i> <strong>Receita: Molho Mostarda & Mel Silvestre</strong>
+              </div>
+              <p>Misture 2 colheres de Mel Méis Coutinho, 2 colheres de mostarda dijon, 2 colheres de azeite extravirgem, gotas de limão e pitada de sal. Excelente para saladas e grelhados.</p>
+            </div>
+          </div>
+
+          <!-- Card: Queijos & Charcutaria -->
+          <div class="benefit-interactive-card" data-category="culinaria">
+            <div class="b-card-badge culinaria-badge">
+              <i data-lucide="wine"></i> Harmonização Gourmet
+            </div>
+            <h3 class="b-card-title">Queijos Nobres, Brie Quente & Nozes</h3>
+            <p class="b-card-desc">
+              O perfil encorpado e aromático da florada silvestre combina com queijos brie e camembert aquecidos, queijo canastra meia cura, gorgonzola e tábuas de charcutaria.
+            </p>
+            <div class="b-card-recipe">
+              <div class="recipe-head">
+                <i data-lucide="check-circle-2"></i> <strong>Dica de Servir: Entrada Gourmet</strong>
+              </div>
+              <p>Aqueça uma peça de queijo brie por 5 minutos no forno. Finalize regando fios generosos de Mel Méis Coutinho por cima e salpique nozes picadas ou amêndoas tostadas.</p>
+            </div>
+          </div>
+
+          <!-- Card: Ciência & Nutrição Viva -->
+          <div class="benefit-interactive-card" data-category="ciencia">
+            <div class="b-card-badge ciencia-badge">
+              <i data-lucide="dna"></i> Ciência & Micronutrientes
+            </div>
+            <h3 class="b-card-title">Mais de 180 Compostos Bioativos Vivos</h3>
+            <p class="b-card-desc">
+              Pesquisas comprovam mais de 180 substâncias ativas no mel cru: compostos fenólicos, flavonoides antioxidantes como a <strong>pinocembrina</strong>, vitaminas do complexo B e minerais quelados de alta biodisponibilidade.
+            </p>
+            <div class="b-card-recipe">
+              <div class="recipe-head">
+                <i data-lucide="check-circle-2"></i> <strong>Ação Antioxidante Natural</strong>
+              </div>
+              <p>Combate radicais livres celulares, apoia a microbiota intestinal com ação prebiótica e potencializa a absorção de nutrientes dos alimentos.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Shipping & Logistics Section -->
+    <section id="entregas" class="shipping-section">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <span class="section-tag"><i data-lucide="truck"></i> Entrega Ágil & Segura</span>
+          <h2 class="section-heading">Logística Cuidadosa: Onde Entregamos</h2>
+          <p class="section-subheading">Distribuímos com agilidade na Grande Vitória e enviamos com embalagem antichoque para todo o Brasil.</p>
+        </div>
+
+        <div class="shipping-cards-grid">
+          
+          <!-- Card Grande Vitória -->
+          <div class="shipping-card gv-card">
+            <div class="shipping-icon-wrap">
+              <i data-lucide="bike"></i>
+            </div>
+            <div class="shipping-badge">Entrega Expressa &bull; Grande Vitória</div>
+            <h3>Entregas na Grande Vitória (ES)</h3>
+            <p class="shipping-text">
+              Atendimento expresso nos principais municípios da região metropolitana:
+            </p>
+            <div class="cities-tags">
+              <span class="city-tag">Vila Velha</span>
+              <span class="city-tag">Vitória</span>
+              <span class="city-tag">Serra</span>
+              <span class="city-tag">Cariacica</span>
+              <span class="city-tag">Viana</span>
+              <span class="city-tag">Guarapari</span>
+            </div>
+            <ul class="shipping-points">
+              <li><i data-lucide="check-circle-2"></i> Entrega rápida via motoboy com taxa local combinada.</li>
+              <li><i data-lucide="check-circle-2"></i> Combine o melhor dia e horário diretamente no WhatsApp.</li>
+              <li><i data-lucide="check-circle-2"></i> Pagamento via Pix ou Dinheiro no momento da entrega.</li>
+            </ul>
+            <div class="shipping-card-action">
+              <button class="btn btn-shipping" onclick="openCartWithRegion('grande-vitoria')">
+                <i data-lucide="shopping-bag"></i> Pedir para Grande Vitória
+              </button>
+            </div>
+          </div>
+
+          <!-- Card Brasil Inteiro -->
+          <div class="shipping-card br-card">
+            <div class="shipping-icon-wrap">
+              <i data-lucide="package"></i>
+            </div>
+            <div class="shipping-badge br-badge">Envio Nacional</div>
+            <h3>Envio para Todo o Brasil</h3>
+            <p class="shipping-text">
+              Não mora na Grande Vitória? Enviamos seu pedido para qualquer endereço do Brasil:
+            </p>
+            <div class="security-highlights">
+              <div class="sec-item">
+                <i data-lucide="shield-check"></i>
+                <span><strong>Embalagem Antichoque:</strong> Proteção amortecida especial projetada para garrafas nobres de vidro de 1L.</span>
+              </div>
+              <div class="sec-item">
+                <i data-lucide="send"></i>
+                <span><strong>Cotação Ágil:</strong> Correios (Sedex / PAC) ou transportadoras com código de rastreamento direto.</span>
+              </div>
+            </div>
+            <ul class="shipping-points">
+              <li><i data-lucide="check-circle-2"></i> Envio com código de rastreamento para acompanhar a entrega.</li>
+              <li><i data-lucide="check-circle-2"></i> Frete cotado rapidamente no WhatsApp com base no seu CEP.</li>
+            </ul>
+            <div class="shipping-card-action">
+              <button class="btn btn-shipping btn-shipping-secondary" onclick="openCartWithRegion('outra-regiao')">
+                <i data-lucide="map-pin"></i> Cotar Frete Nacional
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <span class="section-tag"><i data-lucide="help-circle"></i> Perguntas Frequentes</span>
+          <h2 class="section-heading">Tire Suas Dúvidas Sobre a Méis Coutinho</h2>
+        </div>
+
+        <div class="faq-accordion">
+          
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>O Mel Silvestre Méis Coutinho cristaliza? Como sei que ele é 100% puro?</span>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </summary>
+            <div class="faq-answer">
+              <p><strong>O nosso mel praticamente não cristaliza, mas é 100% puro e natural!</strong> Isso é resultado direto de sua florada silvestre nobre: colhido nas matas nativas preservadas do Espírito Santo, as flores silvestres produzem um néctar com predomínio natural de <em>frutose</em> sobre glicose. É essa proporção botânica da natureza que mantém o mel fluido, límpido e encorpado por muito mais tempo, sem necessidade de nenhum processo químico ou térmico.</p>
+              <p style="margin-top: 0.6rem;">Ele é <strong>100% puro, cru e natural</strong>, sem qualquer tipo de xarope, açúcar invertido ou superaquecimento industrial. Você recebe na garrafa de vidro um mel vivo, rico em enzimas e nutrientes preservados exatamente como as abelhas criaram na natureza.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Por que o produto vem em garrafa de 1 Litro de vidro e não em plástico?</span>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>O vidro é um material nobre e quimicamente neutro que não absorve cheiros, não altera o sabor e não libera microplásticos nem toxinas nos alimentos. Além disso, a garrafa de 1 Litro garante praticidade, durabilidade e a melhor relação custo-benefício para sua casa.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Como funciona a entrega e o cálculo do frete?</span>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>Para a <strong>Grande Vitória</strong>, combinamos a entrega direta via motoboy com taxa local acessível. Para <strong>outras regiões do Espírito Santo e qualquer estado do Brasil</strong>, cotamos o frete mais vantajoso (Correios Sedex/PAC ou transportadora) diretamente pelo WhatsApp com base no seu CEP.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Quais são as formas de pagamento aceitas?</span>
+              <i data-lucide="chevron-down" class="faq-arrow"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>Aceitamos <strong>Pix</strong> (a chave é enviada diretamente na conversa do WhatsApp para confirmação), pagamento em <strong>dinheiro</strong> no momento da entrega presencial na Grande Vitória, ou combinação de cartão/transferência diretamente com nossa equipe.</p>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Quick Contact / WhatsApp CTA -->
+    <section id="contato" class="cta-section">
+      <div class="container cta-container">
+        <div class="cta-content">
+          <span class="cta-top-tag"><i data-lucide="message-circle"></i> Atendimento Direto</span>
+          <h2 class="cta-title">Deseja Fazer um Pedido ou Tirar Dúvidas?</h2>
+          <p class="cta-text">
+            Fale diretamente com a equipe da <strong>Méis Coutinho</strong> no WhatsApp. Estamos à disposição para tirar qualquer dúvida sobre o produto e as taxas de entrega para sua localidade.
+          </p>
+          <div class="bottom-origin-note">
+            <i data-lucide="map-pin"></i> Curadoria no Espírito Santo &bull; Florada e Envase em Linhares &bull; Atendimento em Vila Velha
+          </div>
+        </div>
+        <div class="cta-actions">
+          <a href="#" id="directWhatsAppLink" class="btn btn-whatsapp-lg" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="message-circle"></i>
+            <span>Conversar no WhatsApp</span>
+          </a>
+          <span class="cta-phone-label">WhatsApp Oficial: <strong>(27) 99806-3815</strong></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo">
+          <img src="img/logo-transparent-gold.png" alt="Méis Coutinho" class="footer-logo-img">
+        </div>
+        <p class="footer-desc">
+          Mel Silvestre 100% Puro de Origem Capixaba.
+        </p>
+        <div class="footer-pills">
+          <span class="f-pill"><i data-lucide="wine"></i> Garrafa de Vidro 1L</span>
+          <span class="f-pill"><i data-lucide="infinity"></i> Mel Cru Sem Validade</span>
+          <span class="f-pill"><i data-lucide="shield-check"></i> 100% Puro</span>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#produto">Garrafa de 1 Litro</a></li>
+          <li><a href="#historia">Origem & Curadoria</a></li>
+          <li><a href="#vidro-validade">Por Que Vidro & Sem Validade</a></li>
+          <li><a href="#beneficios">Benefícios & Culinária</a></li>
+          <li><a href="#entregas">Entregas GV & Brasil</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Atendimento & Vendas</h4>
+        <p><i data-lucide="phone"></i> WhatsApp: <strong id="footerPhoneDisplay">(27) 99806-3815</strong></p>
+        <p><i data-lucide="map-pin"></i> Atendimento Grande Vitória &amp; Envio Nacional</p>
+        <p><i data-lucide="truck"></i> Entregas Expressas na Grande Vitória e Todo o Brasil</p>
+        <div class="footer-brand-seal">
+          <i data-lucide="shield-check"></i> Méis Coutinho &bull; Mel Silvestre 100% Puro
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear"></span> Méis Coutinho &bull; Todos os direitos reservados. Mel Silvestre 100% Puro.</p>
+        <p class="footer-note">Embalado na origem em garrafa de vidro nobre de 1 Litro &bull; Mel Cru &amp; Silvestre Capixaba.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-in Shopping Cart Drawer / Modal -->
+  <div id="cartOverlay" class="cart-overlay" aria-hidden="true">
+    <div class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+      
+      <!-- Cart Header -->
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title">
+          <i data-lucide="shopping-bag" class="drawer-header-icon"></i>
+          <div>
+            <h2 id="cartDrawerTitle">Seu Pedido</h2>
+            <span class="drawer-subtitle">Garrafa de Vidro de 1 Litro</span>
+          </div>
+        </div>
+        <button id="closeCartBtn" class="close-cart-btn" aria-label="Fechar carrinho">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <!-- Cart Body Items -->
+      <div class="cart-drawer-body">
+        <div id="cartEmptyState" class="cart-empty-state" style="display: none;">
+          <div class="empty-icon-wrap">
+            <i data-lucide="package-open" class="empty-icon"></i>
+          </div>
+          <p class="empty-title">Seu carrinho está vazio</p>
+          <p class="empty-desc">Selecione quantas garrafas de 1L de puro mel silvestre você deseja pedir.</p>
+          <div class="empty-state-actions">
+            <button type="button" id="addOneBottleCartBtn" class="btn btn-primary btn-sm">+ Adicionar 1 Garrafa de 1L</button>
+            <button type="button" id="continueShoppingBtn" class="btn btn-secondary btn-sm">Explorar o Mel de 1L</button>
+          </div>
+        </div>
+
+        <div id="cartItemsList" class="cart-items-list">
+          <!-- Item card dynamically managed via JS -->
+        </div>
+
+        <!-- Checkout & Delivery Form -->
+        <div id="cartBuyerForm" class="cart-buyer-form">
+          <h3 class="buyer-form-title">
+            <i data-lucide="map-pin"></i> Dados de Entrega & Localização
+          </h3>
+          <p class="buyer-form-hint">Selecione sua região para calcularmos a entrega correta:</p>
+
+          <!-- Region Flag / Switcher -->
+          <div class="region-selector-group">
+            <label class="region-label-heading">
+              <span class="flag-icon">🚩</span> Você mora na Grande Vitória (ES)?
+            </label>
+            <div class="region-radios-grid">
+              
+              <label class="region-option-card active" id="labelRegionGV" for="regionGV">
+                <input type="radio" id="regionGV" name="deliveryRegion" value="grande-vitoria" checked>
+                <div class="region-option-content">
+                  <div class="radio-indicator"></div>
+                  <div class="reg-text">
+                    <span class="reg-name"><i data-lucide="bike"></i> Sim, moro na Grande Vitória (ES)</span>
+                    <span class="reg-desc">Vila Velha, Vitória, Serra, Cariacica, Viana, Guarapari</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="region-option-card" id="labelRegionBR" for="regionBR">
+                <input type="radio" id="regionBR" name="deliveryRegion" value="outra-regiao">
+                <div class="region-option-content">
+                  <div class="radio-indicator"></div>
+                  <div class="reg-text">
+                    <span class="reg-name"><i data-lucide="truck"></i> Não, moro em Outra Região / Estado</span>
+                    <span class="reg-desc">Combinar frete e envio direto com a Méis Coutinho</span>
+                  </div>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Fields for Grande Vitória -->
+          <div id="fieldsGrandeVitoria" class="region-conditional-fields">
+            <div class="gv-info-banner">
+              <i data-lucide="map-pin"></i>
+              <span><strong>Entrega Local (Grande Vitória):</strong> Digite seu endereço completo para combinarmos a entrega expressa via motoboy na Grande Vitória.</span>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="buyerCityGV">Município na GV: <span class="req">*</span></label>
+                <select id="buyerCityGV">
+                  <option value="Vila Velha">Vila Velha</option>
+                  <option value="Vitória">Vitória</option>
+                  <option value="Serra">Serra</option>
+                  <option value="Cariacica">Cariacica</option>
+                  <option value="Viana">Viana</option>
+                  <option value="Guarapari">Guarapari</option>
+                  <option value="Outro da GV">Outro município próximo</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="buyerNeighborhood">Bairro: <span class="req">*</span></label>
+                <input type="text" id="buyerNeighborhood" placeholder="Digite seu bairro" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="buyerAddress">Endereço Completo (Rua, Número, Complemento): <span class="req">*</span></label>
+              <input type="text" id="buyerAddress" placeholder="Rua, número, complemento..." required>
+              <div id="addressErrorMsg" class="field-error-msg" style="display: none;">
+                <i data-lucide="alert-circle"></i> Por favor, digite seu endereço para entrega na Grande Vitória.
+              </div>
+            </div>
+          </div>
+
+          <!-- Fields for Outra Regiao (Brasil) -->
+          <div id="fieldsOutraRegiao" class="region-conditional-fields" style="display: none;">
+            <div class="br-info-banner">
+              <i data-lucide="message-circle"></i>
+              <span><strong>Envio Nacional:</strong> O frete e a forma de envio serão cotados com embalagem reforçada diretamente pelo WhatsApp.</span>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="buyerCityOther">Cidade / Estado (opcional):</label>
+                <input type="text" id="buyerCityOther" placeholder="Cidade e Estado">
+              </div>
+
+              <div class="form-group">
+                <label for="buyerCep">CEP de Destino (opcional):</label>
+                <input type="text" id="buyerCep" placeholder="00000-000">
+              </div>
+            </div>
+            <p class="field-subnote">💡 Você pode preencher os dados acima para adiantar o cálculo do frete ou informá-los na conversa do WhatsApp.</p>
+          </div>
+
+          <!-- Buyer Personal Info -->
+          <div class="form-divider"></div>
+
+          <div class="form-group">
+            <label for="buyerName">Seu Nome Completo:</label>
+            <input type="text" id="buyerName" placeholder="Seu nome completo">
+          </div>
+
+          <div class="form-group">
+            <label for="buyerPayment">Forma de Pagamento Preferida:</label>
+            <select id="buyerPayment">
+              <option value="Pix">Pix (Chave informada no WhatsApp)</option>
+              <option value="Dinheiro">Dinheiro na entrega</option>
+              <option value="Cartão">Cartão de Crédito / Débito</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="buyerNotes">Observações ou Dúvidas Adicionais (opcional):</label>
+            <input type="text" id="buyerNotes" placeholder="Observações sobre seu pedido ou entrega">
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Footer / Checkout -->
+      <div id="cartDrawerFooter" class="cart-drawer-footer">
+        <div class="cart-summary-row">
+          <span>Subtotal (<span id="cartTotalItemsCount">1</span> garrafa):</span>
+          <span id="cartSubtotal">R$ 60,00</span>
+        </div>
+        <div class="cart-summary-row shipping-summary-row">
+          <span>Taxa de Entrega / Frete:</span>
+          <span id="cartShippingText" class="shipping-quote-tag">A combinar via WhatsApp</span>
+        </div>
+        <div class="cart-summary-row total-row">
+          <span>Total dos Produtos:</span>
+          <span id="cartTotal">R$ 60,00</span>
+        </div>
+        <p class="cart-footer-note">
+          <i data-lucide="shield-check"></i> Ao clicar abaixo, seu pedido será enviado com os dados preenchidos diretamente para o WhatsApp oficial da Méis Coutinho.
+        </p>
+
+        <button id="sendWhatsAppOrderBtn" class="btn btn-whatsapp-checkout">
+          <i data-lucide="send"></i>
+          <span>Finalizar Pedido pelo WhatsApp</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast" role="alert" aria-live="assertive">
+    <i data-lucide="check-circle" class="toast-icon"></i>
+    <span id="toastMessage">Produto adicionado ao carrinho!</span>
+  </div>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="#" id="floatingWhatsAppBtn" class="floating-whatsapp-btn" target="_blank" rel="noopener noreferrer" title="Falar no WhatsApp com a Méis Coutinho">
+    <i data-lucide="message-circle"></i>
+    <span class="floating-tooltip">Tire dúvidas no WhatsApp</span>
+  </a>
+
+  <!-- Config & Cart Script -->
+  <script src="script.js?v=3.4"></script>
+  <script>
+    // Initialize Lucide icons on DOM ready
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
