@@ -1,27 +1,27 @@
-# Méis Coutinho 🍯 &bull; Mel Natural & Artesanal em Garrafa de Vidro 1L
+# Mel Silvestre Coutinho 🍯 &bull; Mel Natural & Artesanal em Garrafa de Vidro 1L
 
-Site institucional e e-commerce artesanal de alta conversão da marca **Méis Coutinho**, com sede e distribuição em **Vila Velha - ES** e mel silvestre colhido e engarrafado na florada nativa de **Linhares - ES**.
+Site institucional e e-commerce artesanal de alta conversão da marca **Mel Silvestre Coutinho**, com sede e distribuição em **Vila Velha - ES** e mel silvestre colhido e engarrafado na florada nativa de **Linhares - ES**.
 
 ---
 
 ## 🌟 Principais Recursos da Versão Atual
 
-1. **Design System Oficial Méis Coutinho**:
+1. **Design System Oficial Mel Silvestre Coutinho**:
    - **Paleta de Cores**: Off-White (`#F9F8F6`), Verde Floresta Escuro (`#1A362D`), Dourado Metálico (`#B89454`) e Preto Carvão (`#222222`).
    - **Tipografia Clássica & Editorial**: *Playfair Display* para títulos com traços finos e elegantes combinada com *Montserrat* para leitura moderna e limpa.
    - **Componentes de UI Minimalistas**: Botões com cantos retos (0px border-radius), divisores finos de 1px em dourado e respiro visual amplo (whitespace generoso).
-   - **Logotipo Oficial**: Abelha geométrica em traços lineares finos (`img/logo-meis-coutinho.jpg`).
+   - **Logotipo Oficial**: Abelha geométrica em traços lineares finos (`img/logo-mel-silvestre-coutinho.jpg`).
 
 2. **Modelo Institucional de Curadoria**:
    - A empresa atua exclusivamente com curadoria e revenda de mel silvestre 100% puro (sem fabricação industrial própria).
    - Sede e distribuição em Vila Velha (ES), com colheita e envase nas matas de Linhares (ES).
 
-3. **Foto Real da Garrafa Méis Coutinho & Galeria Focal Autêntica**:
+3. **Foto Real da Garrafa Mel Silvestre Coutinho & Galeria Focal Autêntica**:
    - Imagem autêntica da garrafa de 1L com tampa de rolha na vitrine principal (`img/garrafa-coutinho.jpg`).
    - Vistas focais interativas (*Garrafa Inteira*, *Tampa de Rolha*, *Tom Âmbar Puro* e *Apresentação*).
 
 4. **Explicação Científica sobre Cristalização & Perenidade**:
-   - **Cristalização**: Esclarecimento de que o Mel Silvestre Méis Coutinho **praticamente não cristaliza** devido à alta concentração natural de frutose da florada silvestre, mantendo-se límpido e 100% puro.
+   - **Cristalização**: Esclarecimento de que o Mel Silvestre Mel Silvestre Coutinho **praticamente não cristaliza** devido à alta concentração natural de frutose da florada silvestre, mantendo-se límpido e 100% puro.
    - **Por que Vidro de 1L**: Material inerte, zero microplásticos e preservação integral dos nutrientes.
    - **Sem Validade**: Baixíssima umidade (<18%), acidez protetora (pH 3,2 a 4,5) e ação enzimática natural.
 
@@ -51,7 +51,7 @@ No arquivo **`script.js`**, os dados da marca estão centralizados no topo:
 ```javascript
 const CONFIG = {
   sellerPhone: "5527999494212", // (27) 99949-4212
-  brandName: "Méis Coutinho",
+  brandName: "Mel Silvestre Coutinho",
   origin: "Vila Velha - Espírito Santo (Florada em Linhares)",
   product: {
     id: "mel-silvestre-1l",
@@ -69,10 +69,10 @@ const CONFIG = {
 
 ### Exemplo: Cliente da Grande Vitória
 ```text
-🍯 *NOVO PEDIDO - MÉIS COUTINHO*
+🍯 *NOVO PEDIDO - MEL SILVESTRE COUTINHO*
 _Mel Silvestre 100% Puro & Cru • Vila Velha - ES_
 
-Olá! Gostaria de fazer meu pedido de Mel Silvestre pelo site da Méis Coutinho:
+Olá! Gostaria de fazer meu pedido de Mel Silvestre pelo site da Mel Silvestre Coutinho:
 
 📦 *Produto:* Mel Silvestre 100% Puro
 🍶 *Embalagem:* Garrafa de Vidro de 1 Litro (~1,4kg)

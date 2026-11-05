@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-console.log('=== TEST SUITE: MÉIS COUTINHO DESIGN SYSTEM & BRAND RULES ===\n');
+console.log('=== TEST SUITE: MEL SILVESTRE COUTINHO DESIGN SYSTEM & BRAND RULES ===\n');
 let passed = 0;
 let failed = 0;
 
@@ -37,7 +37,7 @@ assert(fs.existsSync(goldLogoPath), 'Gold transparent logo exists at img/logo-me
 // 2. Check HTML Contents
 const html = fs.readFileSync('index.html', 'utf8');
 
-assert(html.includes('Méis Coutinho'), 'Brand name Méis Coutinho present in HTML');
+assert(html.includes('Mel Silvestre Coutinho'), 'Brand name Mel Silvestre Coutinho present in HTML');
 assert(html.includes('5527998063815'), 'Official WhatsApp phone number (5527998063815) present in HTML links');
 assert(html.includes('(27) 99806-3815'), 'Formatted WhatsApp phone number (27) 99806-3815 present in HTML');
 assert(html.includes('img/logo-transparent.png'), 'Official transparent logo image integrated in HTML');
@@ -84,7 +84,7 @@ assert(ctaMatch && ctaMatch[0].includes('bottom-origin-note'), 'Bottom contact a
 assert(!html.includes('placeholder="Ex:'), 'ZERO occurrences of example placeholders (Ex:) in index.html');
 
 // Payment options check: ONLY Pix, Dinheiro, Cartão (NO "A combinar")
-assert(!html.includes('A combinar com vendedor') && !html.includes('A combinar com a Méis Coutinho'), 'Payment selector has NO "A combinar"');
+assert(!html.includes('A combinar com vendedor') && !html.includes('A combinar com a Mel Silvestre Coutinho'), 'Payment selector has NO "A combinar"');
 assert(html.includes('value="Pix"'), 'Payment options include Pix');
 assert(html.includes('value="Dinheiro"'), 'Payment options include Dinheiro');
 assert(html.includes('value="Cartão"'), 'Payment options include Cartão');
@@ -153,9 +153,9 @@ assert(calcTotal(3).includes('180,00'), 'Price for 3 bottles is R$ 180,00');
 
 // Test Message Generation Simulation for Grande Vitória
 function generateMessage(isGV, data) {
-  let msg = `🍯 *NOVO PEDIDO - MÉIS COUTINHO*\n`;
+  let msg = `🍯 *NOVO PEDIDO - MEL SILVESTRE COUTINHO*\n`;
   msg += `_Mel Silvestre 100% Puro e Capixaba_\n\n`;
-  msg += `Olá! Gostaria de fazer meu pedido de Mel Silvestre pelo site da Méis Coutinho:\n\n`;
+  msg += `Olá! Gostaria de fazer meu pedido de Mel Silvestre pelo site da Mel Silvestre Coutinho:\n\n`;
   msg += `📦 *Produto:* Mel Silvestre 100% Puro\n`;
   msg += `🍶 *Embalagem:* Garrafa de Vidro de 1 Litro (~1,4kg)\n`;
   msg += `🔢 *Quantidade:* ${data.qty} garrafa(s) de 1 Litro\n`;

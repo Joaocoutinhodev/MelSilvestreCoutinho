@@ -1,15 +1,15 @@
 /**
- * Méis Coutinho - Mel Natural & Artesanal
+ * Mel Silvestre Coutinho - Mel Natural & Artesanal
  * Lógica & Interatividade para Mel Silvestre 100% Puro em Garrafa de Vidro de 1L
  * Mel Silvestre 100% Puro em Garrafa de Vidro de 1L
  */
 
 const CONFIG = {
-  // WhatsApp oficial da Méis Coutinho (DDI 55 + DDD 27 + Número)
+  // WhatsApp oficial da Mel Silvestre Coutinho (DDI 55 + DDD 27 + Número)
   sellerPhone: "5527998063815",
 
   // Nome Oficial da Marca
-  brandName: "Méis Coutinho",
+  brandName: "Mel Silvestre Coutinho",
   origin: "Espírito Santo",
 
   // Dados do Produto Principal
@@ -36,7 +36,7 @@ function formatCurrency(val) {
 
 // Carregar carrinho do localStorage
 function loadCart() {
-  const saved = localStorage.getItem("meis_coutinho_cart");
+  const saved = localStorage.getItem("mel_silvestre_coutinho_cart");
   if (saved) {
     try {
       const parsed = JSON.parse(saved);
@@ -52,7 +52,7 @@ function loadCart() {
 
 // Salvar carrinho no localStorage
 function saveCart() {
-  localStorage.setItem("meis_coutinho_cart", JSON.stringify(cart));
+  localStorage.setItem("mel_silvestre_coutinho_cart", JSON.stringify(cart));
 }
 
 // Atualizar Interface do Carrinho
@@ -327,9 +327,9 @@ function checkoutToWhatsApp(customQty = null) {
   const total = quantityToBuy * CONFIG.product.price;
 
   // Montagem Elegante da Mensagem do WhatsApp
-  let msg = `🍯 *NOVO PEDIDO - MÉIS COUTINHO*\n`;
+  let msg = `🍯 *NOVO PEDIDO - MEL SILVESTRE COUTINHO*\n`;
   msg += `_Mel Silvestre 100% Puro e Capixaba_\n\n`;
-  msg += `Olá! Gostaria de fazer meu pedido de Mel Silvestre pelo site da Méis Coutinho:\n\n`;
+  msg += `Olá! Gostaria de fazer meu pedido de Mel Silvestre pelo site da Mel Silvestre Coutinho:\n\n`;
   msg += `📦 *Produto:* ${CONFIG.product.name}\n`;
   msg += `🍶 *Embalagem:* ${CONFIG.product.package}\n`;
   msg += `🔢 *Quantidade:* ${quantityToBuy} garrafa(s) de 1 Litro\n`;
@@ -395,7 +395,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Links Rápidos para WhatsApp
-  const directLink = `https://wa.me/${CONFIG.sellerPhone}?text=${encodeURIComponent("Olá! Vim pelo site da Méis Coutinho e gostaria de saber mais sobre o Mel Silvestre de 1 Litro.")}`;
+  const directLink = `https://wa.me/${CONFIG.sellerPhone}?text=${encodeURIComponent("Olá! Vim pelo site da Mel Silvestre Coutinho e gostaria de saber mais sobre o Mel Silvestre de 1 Litro.")}`;
   const directWhatsAppLink = document.getElementById("directWhatsAppLink");
   const floatingWhatsAppBtn = document.getElementById("floatingWhatsAppBtn");
   const mobileWhatsAppBtn = document.getElementById("mobileWhatsAppBtn");
@@ -576,7 +576,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Detecção inteligente de Scroll para valorizar o cabeçalho e logo Méis Coutinho
+  // Detecção inteligente de Scroll para valorizar o cabeçalho e logo Mel Silvestre Coutinho
   const siteHeader = document.querySelector(".site-header");
   if (siteHeader) {
     const handleScroll = () => {
