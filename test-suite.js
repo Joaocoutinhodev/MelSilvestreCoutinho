@@ -251,7 +251,7 @@ assert(css.includes('.footer-bottom-inner') && css.includes('color: #FFFFFF;'), 
 assert(css.includes('max-width: 580px;') || css.includes('max-width: 600px;') || css.includes('max-width: 560px;'), 'Cart drawer width increased for superior readability');
 
 // Header Logo prominence check
-assert(css.includes('clamp(52px, 5.5vw, 68px)') || css.includes('clamp(56px, 6vw, 72px)'), 'Header logo height increased with responsive clamp for noble emphasis');
+assert(css.includes('clamp(54px, 5.5vw, 78px)') || css.includes('clamp(56px, 6vw, 72px)') || css.includes('clamp(52px, 5.5vw, 68px)'), 'Header logo height increased with responsive clamp for noble emphasis');
 
 // Universal Responsiveness Media Queries check
 assert(css.includes('@media (min-width: 1920px)'), 'CSS includes TV / Large Screen media query (min-width: 1920px)');
@@ -296,8 +296,13 @@ assert(css.includes('repeat(auto-fit, minmax(min(100%, 140px), 1fr))'), 'Grid au
 assert(css.includes('repeat(auto-fit, minmax(min(100%, 260px), 1fr))'), 'Grid auto-fit minmax: .footer-content');
 
 // Header elastic breakpoint & fluid gap
-assert(css.includes('clamp(0.5rem, 1.2vw, 1.8rem)'), 'Header navbar: adaptive gap clamp(0.5rem, 1.2vw, 1.8rem) implemented');
+assert(css.includes('clamp(1rem, 2vw, 2.5rem)') || css.includes('clamp(0.5rem, 1.2vw, 1.8rem)'), 'Header navbar: adaptive gap clamp implemented');
 assert(css.includes('@media (max-width: 1180px)'), 'Header navbar: elastic breakpoint (max-width: 1180px) activates mobile hamburger');
+
+// Header elastic redimensioning & spacing checks
+assert(css.includes('clamp(5rem, 6.5vw, 6.5rem)'), 'Header content has elastic fluid height clamp(5rem, 6.5vw, 6.5rem)');
+assert(css.includes('clamp(1rem, 3vw, 3rem)'), 'Header content has elastic responsive padding clamp(1rem, 3vw, 3rem)');
+assert(css.includes('clamp(1.5rem, 3vw, 4rem)'), 'Header nav-links has safe margin-left clamp(1.5rem, 3vw, 4rem) ensuring distance from logo');
 
 // Cart Drawer / Modal sizing
 assert(css.includes('width: min(560px, 94vw);') || css.includes('width: min(540px, 94vw);'), 'Cart drawer: fluid responsive width implemented');
